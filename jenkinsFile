@@ -1,17 +1,19 @@
-@Library ("MBL") _
+//@Library ("MBL") _
 pipeline{
   agent any
   
   stages{
     stage('Build'){
       steps{
-        sample()
+        //sample()
+sh "echo Hey suri"
       }
     }
     stage('Test'){
         steps{
-          sample()
-          sample()
+          //sample()
+          //sample()
+sh "echo Hey suri"
         }
       }
   }
