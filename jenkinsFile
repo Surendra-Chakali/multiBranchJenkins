@@ -1,9 +1,10 @@
+@Library ("myFirstLibrary") _
 pipeline{
   agent any
     stages{
       stage('Build'){
         steps{
-          echo "Hey Suri"
+          sample()
         }
       }
     }
