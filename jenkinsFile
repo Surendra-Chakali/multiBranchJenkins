@@ -1,11 +1,11 @@
-@Library ("myFirstLibrary") _
+@Library ("MBL") _
 pipeline{
-agent any
-stages{
-stage{
-steps{
-sample()
-}
-}
-}
+  agent any
+  stages{
+    stage('Build'){
+      steps{
+        sample()
+      }
+    }
+  }
 }
