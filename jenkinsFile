@@ -1,11 +1,18 @@
 @Library ("MBL") _
 pipeline{
   agent any
-    stages{
-      stage('Build'){
+  
+  stages{
+    stage('Build'){
+      steps{
+        sample()
+      }
+    }
+    stage('Test'){
         steps{
+          sample()
           sample()
         }
       }
-    }
+  }
 }
